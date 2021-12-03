@@ -6,7 +6,7 @@ IMPORTANT: This library needs a LibreOffice versión installed. (It can be a Por
 
 Example:
 
-``
+```
 const OfficePath = @"userPath\LibreOfficePortable_7.0\App\libreoffice\program\soffice.exe"; //or soffice.bin
 const inputFilePath = @"";
 const outputDirPath = @""; //OPTIONAL
@@ -14,12 +14,13 @@ const outputDirPath = @""; //OPTIONAL
 OfficeToPDF transformer = new OfficeToPDF(OfficePath);
 transformer.ConvertToPDF(inputFilePath, outputDirPath);
 
-``
+```
 
 **Example: Specifying max timeout**
+
 *Sometimes.. huge files or documents that will generate a lot of pages (like Excel) can take a long time.
 The default timeout is: **30 MIN***
-``
+```
 const OfficePath = @"userPath\LibreOfficePortable_7.0\App\libreoffice\program\soffice.exe"; //or soffice.bin
 const inputFilePath = @"";
 const outputDirPath = @""; //OPTIONAL
@@ -28,7 +29,7 @@ const maxTimeout = 5; //Min
 OfficeToPDF transformer = new OfficeToPDF(OfficePath);
 transformer.ConvertToPDF(inputFilePath, outputDirPath, maxTimeout);
 
-``
+```
 
 
 Common extensions:
